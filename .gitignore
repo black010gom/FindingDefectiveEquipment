@@ -1,55 +1,184 @@
-# Prerequisites
-*.d
+# --- OS general ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
+# --- Python general ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pki
 *.so
-*.so.*
+*.egg-info/
+*.egg
+.eggs/
+dist/
+build/
+develop-eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+pythonenv/
+.venv*/
+venv*/
+
+# PyInstaller / packaging
+*.spec
+*.manifest
+*.dll
+*.lib
+
+# Test/coverage
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.pyre/
+ruff_cache/
+pytestdebug.log
+
+# Logs
+*.log
+logs/
+log/
+
+# Jupyter
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# --- Kivy specific ---
+# Kivy config & runtime caches
+.kivy/
+.kivy_logs/
+kivylogs/
+*.kv~        # backup/temp kv files
+*.kv.orig
+*.kv.bak
+
+# Kivy assets build outputs (e.g., packaging)
+*.apk
+*.aab
+*.ipa
+*.xcarchive
+*.keystore
+*.jks
+
+# Buildozer (Android build tool)
+.buildozer/
+buildozer.spec.user
+bin/
+# Common buildozer outputs
+/build/
+# If you keep a local NDK/SDK within project (optional)
+android-ndk*/
+android-sdk*/
+gradle/
+.gradle/
+*.gradle
+gradlew
+gradlew.bat
+
+# Xcode (for iOS via Kivy-iOS)
+DerivedData/
+*.xcworkspace/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/*
+*.xcuserstate
+*.xcuserdata/
+Pods/
+Podfile.lock
+
+# Kivy resources temp
+*.atlas
+*.atlas.zip
+
+# --- C/C++ general ---
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+
+# Static/Shared libraries
+*.a
+*.lib
+*.so
 *.dylib
+*.dll
 
 # Executables
 *.exe
 *.out
 *.app
-*.i*86
-*.x86_64
-*.hex
+*.run
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Build systems
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+makefile
+build/
+out/
+bin/
+lib/
+# Meson
+builddir/
+meson-private/
+# Ninja
+*.ninja
+.ninja_deps
+.ninja_log
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# --- IDE/editor ---
+# VSCode
+.vscode/
+# JetBrains
+.idea/
+*.iml
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+# Sublime
+*.sublime-project
+*.sublime-workspace
 
-# debug information files
-*.dwo
+# --- Misc ---
+# Node (if used for tooling)
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Images/cache (optional)
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
